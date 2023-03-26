@@ -13,21 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +21,108 @@
     transform: rotate(360deg);
   }
 }
+
+  .navBar{
+    background-color: #333;
+    color: #fff;
+    width: 100%; 
+    height: 50px;
+    text-shadow: 1px 1px 2px #000;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+  }
+  
+  .rutas{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding-inline-end: 50px;
+  }
+
+
+  .active {
+  color: red
+  }
+
+.pokeLogo img{
+  width: 48px;
+  height: 48px;
+}
+
+.main-home img{
+  height: 400px;
+  width: 400px;
+}
+
+.selectedPokemon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px #333 solid;
+  width: 75%;
+  
+}
+
+.selectedImage img{
+  height: 200px;
+}
+
+
+.interact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.interact select{
+  height: 30px;
+  width: 150px;
+  border-radius: .75rem;
+  margin-block: 10px;
+
+}
+
+.interact button{
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    transition-duration: .2s;
+    transition-property: color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+  }
+  
+  .button-40:hover {
+    background-color: #374151;
+  }
+  
+  .button-40:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-40 {
+      padding: .75rem 1.5rem;
+    }
+  }
