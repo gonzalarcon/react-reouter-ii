@@ -44,7 +44,7 @@
 
 
   .active {
-  color: red
+  color: white;
   }
 
 .pokeLogo img{
@@ -59,12 +59,18 @@
 
 .selectedPokemon{
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   text-align: center;
   border: 1px #333 solid;
-  width: 75%;
-  
+  margin-inline: 300px;
+}
+
+.selectedImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .selectedImage img{
@@ -80,14 +86,22 @@
 }
 
 .interact select{
-  height: 30px;
-  width: 150px;
+  height: 40px;
+  width: 130px;
   border-radius: .75rem;
   margin-block: 10px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 2px;
 
 }
 
-.interact button{
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons button{
     background-color: #111827;
     border: 1px solid transparent;
     border-radius: .75rem;
@@ -111,18 +125,18 @@
     width: auto;
   }
   
-  .button-40:hover {
+  button:hover {
     background-color: #374151;
   }
   
-  .button-40:focus {
+  .buttons:focus {
     box-shadow: none;
     outline: 2px solid transparent;
     outline-offset: 2px;
   }
   
   @media (min-width: 768px) {
-    .button-40 {
+    .buttons {
       padding: .75rem 1.5rem;
     }
   }
